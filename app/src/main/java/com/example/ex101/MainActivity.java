@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -110,5 +111,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {ad5.show();}});
 
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        menu.add("next");
+        menu.add("back");
+        return true;
     }
 }
